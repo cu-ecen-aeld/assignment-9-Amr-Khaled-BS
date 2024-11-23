@@ -1,0 +1,24 @@
+From ecdba20290a391aa28aaa82a5847d94334de32a9 Mon Sep 17 00:00:00 2001
+From: Amr-Khaled-BS <Amr-Khaled-BS@Ubuntu.myguest.virtualbox.org>
+Date: Sun, 20 Oct 2024 11:19:08 -0600
+Subject: [PATCH] Update: Makefile to include only misc-modules and scull
+
+Signed-off-by: Amr-Khaled-BS <Amr-Khaled-BS@Ubuntu.myguest.virtualbox.org>
+---
+ Makefile | 5 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 7b08c49..496cbd9 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,8 +1,5 @@
+ 
+-SUBDIRS =  misc-progs misc-modules \
+-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
+-	   pci usb\
+-	   sbull snull short
++SUBDIRS =   misc-modules scull \
+ 
+ all: subdirs
+ 
